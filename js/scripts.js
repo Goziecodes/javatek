@@ -23,7 +23,7 @@ $(function () {
 
     if (bodyScroll > 300) {
       navbar.addClass("nav-scroll");
-      logo.attr("src", "img/white.png");
+      logo.attr("src", "img/black.png");
     } else {
       navbar.removeClass("nav-scroll");
       logo.attr("src", "img/white.png");
@@ -111,6 +111,7 @@ $(function () {
     loop: true,
 
     on: {
+     
       init: function () {
         var swiper = this;
         for (var i = 0; i < swiper.slides.length; i++) {
@@ -186,8 +187,8 @@ $(function () {
     slidesPerView: 2,
     spaceBetween: 0,
     speed: 1000,
-    loop: true,
-    centeredSlides: true,
+    loop: false,
+    centeredSlides: false,
 
     breakpoints: {
       320: {
